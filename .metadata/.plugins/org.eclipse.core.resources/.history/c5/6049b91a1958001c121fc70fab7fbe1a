@@ -1,0 +1,21 @@
+package com.google.bukmopbacop.oop;
+
+import com.google.bukmopbacop.stuff.Person;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.name = "Serg";
+		p.age = 49;
+
+		
+		Person p2 = new Person();
+		p2.name = "Max";
+		p2.age = 25;
+		
+		p.show();
+		p2.show();
+	}
+
+}

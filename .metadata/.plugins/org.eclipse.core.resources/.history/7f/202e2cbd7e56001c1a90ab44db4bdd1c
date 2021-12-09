@@ -1,0 +1,6 @@
+package ru.specialict.hello;
+
+// Пакетный класс без public (Имя может не совпадать с именем файла)
+class Test2 {
+
+}

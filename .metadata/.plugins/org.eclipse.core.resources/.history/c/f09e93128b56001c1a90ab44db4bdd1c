@@ -1,0 +1,24 @@
+package ru.specialist.hello;
+
+import java.util.Date;
+import java.io.BufferedReader;
+import java.util.Calendar;
+
+// ru.specialict.hello.App - полностью квалифицированное имя класса
+public class App {
+
+	public static void main(String[] args) {
+		
+		Test2 t;
+		
+//		java.util.Date d;
+		Date d;
+		Date d2;
+		Calendar c;
+		BufferedReader r;
+		
+		System.out.println("Hello ugly world!");
+
+	}
+
+}

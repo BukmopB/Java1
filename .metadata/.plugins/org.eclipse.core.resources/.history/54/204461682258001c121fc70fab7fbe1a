@@ -1,0 +1,40 @@
+package com.google.bukmopbacop.oop;
+
+import com.google.bukmopbacop.stuff.Person;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.name = "Serg";
+		p.age = 49;
+
+		
+		Person p2 = new Person();
+		p2.name = "Max";
+		p2.age = 25;
+		
+		p.show();
+		p2.show();
+		
+		Point po1 = new Point();
+		Point po2 = new Point(1, 1);
+		Point po3 = new Point(1, 1);
+		
+		Point.drawPoints();
+//		byte b;
+//		int i = 257;
+//		double d = 323.142;
+//		System.out.println("\nПреобразование int в byte.");
+//		b = (byte) i;
+//		System.out.println("i и b " + i + " " + b);
+//		System.out.println("\nПреобразование double в int.");
+//		i = (int) d;
+//		System.out.println("d и i " + d + " " + i);
+//		System.out.println("\nПреобразование double в byte.");
+//		b = (byte) d;
+//		System.out.println("d и b " + d + " " + b);
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		int n;
+		Scanner scanner = new Scanner(System.in);
+		
+		String voronyString = "";
+		n = scanner.nextInt();
+		n = n % 100;
+		if (n > 19 && n < 10) {
+			n = n % 10;
+		} else {
+			n = 0;
+		}
+		switch (n) {
+			case 0:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+				voronyString = "ворон";
+				break;
+			case 1:
+				voronyString = "ворона";
+				break;
+			case 2:
+			case 3:
+			case 4:
+				voronyString = "вороны";
+				break;
+		default:
+			
+			break;
+		}
+		System.out.printf("На ветке %d %s", n, voronyString);
+
+	}
+
+}

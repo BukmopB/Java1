@@ -1,0 +1,10 @@
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		// int nums[];
+		int[] nums = new int[3]; // непрерывная область памяти
+		System.out.println(nums.length);
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.gmail.bukmopbacob;
+
+public class MyMethods {
+	
+	public void sayHello(String name, int age) {
+		System.out.printf("Hello, %s - %d!\n", name, age);
+	}
+
+	public static void main(String[] args) {
+		MyMethods methods = new MyMethods();
+		methods.sayHello("Serg", 45);
+		methods.sayHello("Max", 15);
+
+	}
+
+}

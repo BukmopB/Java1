@@ -30,4 +30,5 @@ public class Point extends Shape {
 		System.out.printf("This is a %s point with coords (%d, %d)\n",this.color, this.x, this.y);
 	}
 	
+	
 }

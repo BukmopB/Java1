@@ -10,10 +10,11 @@ public class Circle extends Shape{
 	}
 	
 	public Circle(int x, int y, double r, String color) {
+		super(color); // если не вызвать, то будет вызван дефолтный конструктор super();
 		this.x = x;
 		this.y = y;
 		this.r = r;
-		this.color = color;
+//		this.color = color;
 	}
 	
 	public void draw() {

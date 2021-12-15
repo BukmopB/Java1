@@ -1,23 +1,28 @@
 package ru.specialist;
 
 import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class App {
 
 	public static void main(String[] args) {
-		//Locale.setDefault( Locale.US );
+		Locale.setDefault( Locale.US );
 		Locale.setDefault( Locale.forLanguageTag("ru") );
 		
-		// ббнд дюммшу
+		ResourceBundle labels = ResourceBundle.getBundle("ru.specialist.text", Locale.getDefault());
+		String temp = labels.getString("SymbT");
+		System.out.println(temp);
+		
+		// О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫
 		Scanner sc = new Scanner( System.in );
 		System.out.print("T (C): ");
 		double tc = sc.nextDouble(); // ,
 		
-		// напюанрйю дюммшу
+		// О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫
 		double tf = tc * 9 / 5 + 32;
 		
-		// бшбнд дюммшу
+		// О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫
 		System.out.printf(  Locale.US, "T (F): %.4f\n", tf); // .
 		
 		

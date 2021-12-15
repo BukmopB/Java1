@@ -24,10 +24,10 @@ public class Main {
 		Shape point1 = new Point();
 		Shape point2 = new Point(1,1,"red");
 		Shape circle1 = new Circle();
-		Shape circle2 = new Circle(2,2,2,"green");
+		Shape circle2 = new Circle(2,2,2.0,"green");
 		Circle circle3 = new Circle();
+//		circle2.scale(2.5);
 		circle3.scale(2.5);
-		
 		Shape.drawScene();
 		
 //		Point po1 = new Point();
@@ -48,6 +48,13 @@ public class Main {
 //		b = (byte) d;
 //		System.out.println("d и b " + d + " " + b);
 		
+		Singleton singleton1 = Singleton.getSingleton();
+		Singleton singleton2 = Singleton.getSingleton();
+
+		
+		Shape shape = new Shape();
+		shape.color("green");
+		Shape.drawScene();
 	}
 
 }
